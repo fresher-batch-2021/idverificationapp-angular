@@ -3,26 +3,30 @@
   <div class="overall">
       <form (ngSubmit)="registration()"> 
           <label> <strong> YOUR NAME </strong> </label>
-          <input type="text" id="yname" placeholder="your name" required><br>
+          <input name="registerform" type="text" [(ngModel)]="yourname" id="yname" placeholder="your name" required><br>
           <br>
           <label> <strong> DATE OF BIRTH </strong> </label>
-          <input type="date" id="datebirth" required><br>
+          <input type="date"    id="datebirth" required><br>
           <br>
 
           <label> <strong> EMAIL ID </strong> </label>
-          <input type="email" id="email1">
+          <input type="email"  name="registerform" [(ngModel)]="emailid" id="email1">
           <br>
           <br>
+          <label> <strong> MOBILE NUMBER </strong> </label>
+            <input type="tel" id="number" name="registerform" [(ngModel)]="number" minlength="10" maxlength="10" required>
+            <br>
+            <br>
           <label> <strong>USERNAME</strong> </label>
-          <input type="text" id="Username">
+          <input type="text"  name="registerform" [(ngModel)]="username" id="Username">
           <br>
           <br>
           <label> <strong>CREATE PASSWORD</strong> </label>
-          <input type="password" id="password" name="password" required  placeholder="Password">
+          <input type="password"  name="registerform" [(ngModel)]="create_password" id="password" name="password" required  placeholder="Password">
           <br>
           <br>
           <label> <strong>CONFIRM PASSWORD </strong> </label>
-          <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password">
+          <input type="password"  name="registerform" [(ngModel)]="confirmpassword" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password">
           <br>
           <br>
           <button class="button" type="submit">submit</button><br>
