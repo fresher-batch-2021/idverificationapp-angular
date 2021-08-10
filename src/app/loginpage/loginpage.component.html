@@ -1,0 +1,21 @@
+<h2>Login Form</h2>
+<div class="overall">
+  <form (ngSubmit)="login()">
+    <div class="imgcontainer">
+      <img src="assets/image/image1.png" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+      <label for="uname"><strong>Username</strong></label>
+      <input type="text" [(ngModel)]="username" id="username" placeholder="Enter Username" name="uname">
+      <label for="psw"><strong>Password</strong></label>
+      <input type="password" minlength="6" [(ngModel)]="password" id="password" placeholder="Enter Password" name="psw">
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+  </div>

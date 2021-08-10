@@ -1,0 +1,92 @@
+
+.change{
+    margin-left: 75%;
+    width: 250px;
+    
+}
+h1{
+    color:orangered;
+    text-align: center;
+    font-size: 20px;
+    background-color: aquamarine;
+}
+body{
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;    
+}
+img{
+margin-left: 10%;
+display: block;
+width:400px;
+padding-top: 20px;
+}
+.hi1{
+    background-color: rosybrown;
+}
+.pan{
+    text-align: center;
+    font-size: 2rem;
+    color:sienna;
+}
+.navbar{
+    background-color: brown;
+   color: whitesmoke;
+    text-align: center;
+    padding:40px;
+    text-decoration: none;
+}
+.overall{
+    border-radius: 20px;
+     margin-left: 10%;
+     margin-right: 30%;
+     border:3px solid;
+     margin-top: 1%;
+     margin-bottom: 1%
+     }
+.h2{
+    color: blue;
+font-size: 90%;
+margin-left: 2%;
+}
+.applicant{
+    margin-left: 1%;
+    background-color:;
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-bottom: 8%;
+}
+.residential{
+    color: blue;
+    font-size: 110%
+}
+.submit{
+    background: rgb(96, 160, 44);
+    color:black; 
+    margin-left: 30%;
+    width: 20%;
+    height: 20px;
+    
+}
+.submit{
+    border: 80%;
+    outline: 80px;
+    height: 20px;
+    background-color:white;
+    border-radius: 10px;
+}
+.collectingdata {
+    text-align: center;
+    width: 90%;
+    color: blue;
+}
+#collectingdata,
+table,
+thead,
+tbody,
+th,
+td {
+    border: 1px solid;
+    color: black;
+    margin-left: 5%;
+}
