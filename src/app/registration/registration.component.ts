@@ -13,7 +13,6 @@ export class RegistrationComponent implements OnInit {
   ngOnInit(): void {
   }
   yourname:string="" ;
-  date_of_birth:string="" ;
   emailid:string="";
   username:string="";
   number:string="";
@@ -26,26 +25,25 @@ export class RegistrationComponent implements OnInit {
     if(this.yourname =="" ){
       alert("Invalid");
     }
-    if(this.emailid == "" ){
+   else if(this.emailid == ""|| this.emailid==null ){
       alert("invalid email");
     }
-    if(this.number ==""){
+  else  if(this.number =="" || this.number.length !=10){
       alert("Enter_phone_number")
     }
-    if(this.username == "" ){
+  else  if(this.username == "" ){
       alert("invalid username");
     }
-    if(this.create_password == "" ){
+  else  if(this.create_password == "" ){
       alert("invalid password");
     }
-    if(this.confirmpassword == "" ){
+  else  if(this.confirmpassword !== this.create_password ){
       alert("No_match_password");
-    } else{
-
+    } 
+    else{
       const url = "https://product-mock-api.herokuapp.com/identityapp/api/v1/auth/register"
       const registerData = {
           name: this.yourname,
-          dob: this.date_of_birth,
           email: this.emailid,
           username: this.username,
           mobileNo: this.number,
@@ -55,7 +53,7 @@ export class RegistrationComponent implements OnInit {
       axios.post(url, registerData).then(res => {
           console.log(registerData);
           alert("successfull")
-          window.location.href = "loginpage";
+          window.location.href ="loginpage"
         }).catch(err => alert("error "))
       }
   }
